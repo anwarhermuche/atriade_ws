@@ -1,5 +1,6 @@
 import requests
 import json
+from app.core.settings import settings
 
 class News:
 
@@ -16,7 +17,7 @@ class News:
         params = {
         "engine": self.engine,
         "q": self.__get_query(),
-        "api_key": SEARCH_API_KEY,
+        "api_key": settings.SEARCH_API_KEY,
         "time_period": self.time_period
         }
 
