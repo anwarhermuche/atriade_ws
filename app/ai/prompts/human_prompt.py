@@ -1,0 +1,1 @@
+HUMAN_PROMPT = """{stocks_report}\n{news_report}"""
